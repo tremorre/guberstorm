@@ -3,41 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Image Gallery Website</title>
+    <title>Guberstorm Compendium</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav>
         <a href="index.html">Home</a>
-        <a href="page1.html">Topic 1</a>
-        <a href="page2.html">Topic 2</a>
-        <a href="page3.html">Topic 3</a>
+        <a href="page1.html">Wincons</a>
+        <a href="page2.html">Tutors</a>
+        <a href="page3.html">Card Draw</a>
     </nav>
 
     <div class="content">
-        <h1>Welcome to My Image Gallery Website</h1>
+        <h1>Guberstorm</h1>
         
-        <p>This is a demonstration of an interactive website where hovering over certain text will display related images in a lightbox.</p>
+        <p>This website is meant to store my thoughts on the Revolutions Custom Standard deck named Guberstorm, originally developed by Lih but developed into a faster though somewhat less resilient deck by me, despite one major relevant nerf of a card and an additional ban of a key sideboard card.</p>
 
-        <h2>How It Works</h2>
-        <p>Throughout this site, you'll encounter special highlighted text. When you hover over these links, like 
-        <span class="image-trigger" data-image="images/gub.jpg" data-caption="This is Sample Image 1">this example about sample image 1</span>, 
-        a lightbox will appear showing the associated image.</p>
+        <h2>How The Deck Wins</h2>
+        <p>The deck is built on and named after the card often abbreviated as
+        <span class="image-trigger" data-image="images/gub.jpg" data-caption="Gubernatorial Fundraiser">Guber</span>.</p>
 
-        <p>Try hovering over different topics to see various images. For instance, hover over 
-        <span class="image-trigger" data-image="images/gub.jpg" data-caption="Sample Image 2">this link to see another image</span>.</p>
+        <p>Most of the card is self-explanatory, but for those who aren't coming here from Revolutions Custom Standard, the make a pledge mechanic effectively gets you an effect each time except the first. You have a choice of which effect you want, but in this deck, we always want <span class="image-trigger" data-image="images/CNY10.jpg" data-caption="Treasures are how we win.">Vishanki</span><p>
 
-        <h2>Navigation</h2>
-        <p>Use the navigation menu above to explore different pages. Each page contains its own content with embedded image triggers.</p>
+        <p>If one is able to have 3 copies of this effect on the battlefield at once, then all 3-mana spells can be cast mana-neutral, because each will generate 3 treasures which can be spent on the next cast.
+            The original way to take advantage of this was to play many card draw spells, some of which are strongly mana-positive, and end up with a finite but very large number of treasures.
+            I spotted the card
+        <span class="image-trigger" data-image="images/seer.jpg" data-caption="Sample Image 2">Seer of the Aspirants</span> which is able, with three Gubers in play, to cast itself from play repeatedly, and each time getting a surveil.
+            We'll get into the details later, but suffice it to say that this is sufficient to win the game in almost every circumstance.
+            In particular, if we can get a 4th <span class="image-trigger" data-image="images/gub.jpg" data-caption="Pledging in this deck makes a treasure, except the first time you do it.">Guber</span> in play, we can generate infinite treasures
+            by casting <span class="image-trigger" data-image="images/seer.jpg" data-caption="Sample Image 2">Seer</span> repeatedly, and with infinite surveils, it is generally easy to get to this point.
+        </p>
 
-        <h2>Getting Started</h2>
-        <p>Click on any of the topic pages in the navigation menu to see more examples of how 
-        <span class="image-trigger" data-image="images/sample3.jpg" data-caption="Sample Image 3 - Beautiful!">images can be embedded</span> 
-        throughout the text content.</p>
+        <h2>Making the Combo</h2>
+        <p>What makes this deck a 3-card combo, which is feasible, rather than a 4-card combo, which is generally not, is the card <span class="image-trigger" data-image="images/echo.jpg" data-caption="5 mana for two clones is an amazing rate">Reflected Echo</span>.
+         If you start your turn with a Guber in play, you can cast Reflected Echo on it, and make 2 treasures, and then spend them and 2 more mana to flashback the card, you end up with 3 Gubers in play and 3 treasures which you can use to start the unlimited chain of 3-mana spells.</p>
+
+        <h2>Topics</h2>
+        <p>The topic pages in the navigation menu will list topics, either categories of card from which we must select some, or packages of cards which I have considered playing, or have been played, in the deck.</p>
     </div>
 
     <footer>
-        <p>&copy; 2025 My Image Gallery Website</p>
+        <p>No copyright claimed by me. Copyright of the images in the cards remainins with the artists, or whoever now owns the images. That aside, use the contents of this any way you wish.</p>
     </footer>
 
     <script src="script.js"></script>
