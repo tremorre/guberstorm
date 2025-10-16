@@ -6,25 +6,63 @@
     <title>How to kill in a turn with Guberstorm</title>
     <link rel="stylesheet" href="style.css">
     <style>
-        /* Compact infobox styling */
+        /* Compact structured infobox */
         .kill-infobox {
-            background-color: #ecf0f1;
+            display: inline-block;
             border: 2px solid #3498db;
             border-radius: 6px;
-            padding: 15px 20px;
+            overflow: hidden;
             margin: 20px 0;
-            font-size: 16px;
-            line-height: 1.8;
+            max-width: 600px;
         }
 
-        .kill-infobox div {
-            margin: 5px 0;
+        .infobox-top {
+            display: grid;
+            grid-template-columns: 120px 1fr;
         }
 
-        .kill-infobox strong {
+        .infobox-mana {
+            background-color: #3c00a9;
+            color: white;
+            padding: 15px;
+            font-weight: bold;
+            font-size: 18px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .infobox-mana-label {
+            font-size: 12px;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+
+        .infobox-requirements {
+            background-color: #ecf0f1;
+            padding: 15px;
+        }
+
+        .infobox-requirements strong {
+            display: block;
             color: #2c3e50;
-            min-width: 120px;
-            display: inline-block;
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+
+        .infobox-sequence {
+            background-color: #d5dbdb;
+            padding: 12px 15px;
+            font-family: 'Courier New', monospace;
+            font-size: 15px;
+        }
+
+        .infobox-sequence strong {
+            color: #2c3e50;
+            font-family: 'Georgia', serif;
+            margin-right: 8px;
         }
 
         /* Inline images container */
@@ -36,17 +74,18 @@
         }
 
         .inline-images img {
-            max-width: 200px;
-            max-height: 200px;
+            max-width: 250px;
+            max-height: 250px;
             width: auto;
             height: auto;
         }
 
         /* Single embedded images */
         .content > h2 + img,
-        .content h2 + img {
-            max-width: 250px;
-            max-height: 250px;
+        .content h2 + img,
+        .kill-section > img {
+            max-width: 300px;
+            max-height: 300px;
             display: block;
             margin: 15px auto;
         }
@@ -72,13 +111,23 @@
             <h2>Basic Kill</h2>
             
             <div class="kill-infobox">
-                <div><strong>Mana:</strong> 8</div>
-                <div><strong>Requirements:</strong> Guber, Echo, Tutor</div>
-                <div><strong>Sequence:</strong> Guber → Echo → FB-Echo → <span class="image-trigger" data-image="images/swords.jpg">Swords</span>/<span class="image-trigger" data-image="images/shift.jpg">Shift</span></div>
+                <div class="infobox-top">
+                    <div class="infobox-mana">
+                        <div class="infobox-mana-label">Mana</div>
+                        <div>8</div>
+                    </div>
+                    <div class="infobox-requirements">
+                        <strong>Requirements:</strong>
+                        Guber, Echo, Tutor
+                    </div>
+                </div>
+                <div class="infobox-sequence">
+                    <strong>Sequence:</strong> Guber → Echo → FB-Echo → <span class="image-trigger" data-image="images/swords.jpg">Swords</span>/<span class="image-trigger" data-image="images/shift.jpg">Shift</span>
+                </div>
             </div>
 
             <div class="inline-images">
-                <img src="images/gub.jpg" alt="Guber">
+                <img src="images/guber.jpg" alt="Guber">
                 <img src="images/echo.jpg" alt="Echo">
                 <img src="images/shift.jpg" alt="Shift">
                 <img src="images/seer.jpg" alt="Seer">
@@ -105,9 +154,19 @@
             <img src="images/pouncer.jpg" alt="Pouncer">
             
             <div class="kill-infobox">
-                <div><strong>Mana:</strong> 6</div>
-                <div><strong>Requirements:</strong> Guber, Pouncer in Play, Echo, Tutor</div>
-                <div><strong>Sequence:</strong> Guber → Pounce → Echo → FB-Echo → Tutor</div>
+                <div class="infobox-top">
+                    <div class="infobox-mana">
+                        <div class="infobox-mana-label">Mana</div>
+                        <div>6</div>
+                    </div>
+                    <div class="infobox-requirements">
+                        <strong>Requirements:</strong>
+                        Guber, Pouncer in Play, Echo, Tutor
+                    </div>
+                </div>
+                <div class="infobox-sequence">
+                    <strong>Sequence:</strong> Guber → Pounce → Echo → FB-Echo → Tutor
+                </div>
             </div>
 
             <p>Pouncer is uniquely among our early money-saving-spells able to decrease our necessary threshhold by 2. Instead of casting its ability before everything, we can cast it after a guber is out, thus going +2 net with it.</p>
@@ -119,9 +178,19 @@
             <img src="images/bargain.jpg" alt="Wretched Bargain">
             
             <div class="kill-infobox">
-                <div><strong>Mana:</strong> 7</div>
-                <div><strong>Requirements:</strong> Guber, Echo, Bargain, MP3, Tutor</div>
-                <div><strong>Sequence:</strong> Guber → Echo → Bargain → MP3 → Echo → Tutor</div>
+                <div class="infobox-top">
+                    <div class="infobox-mana">
+                        <div class="infobox-mana-label">Mana</div>
+                        <div>7</div>
+                    </div>
+                    <div class="infobox-requirements">
+                        <strong>Requirements:</strong>
+                        Guber, Echo, Bargain, MP3, Tutor
+                    </div>
+                </div>
+                <div class="infobox-sequence">
+                    <strong>Sequence:</strong> Guber → Echo → Bargain → MP3 → Echo → Tutor
+                </div>
             </div>
 
             <p>Bargain is another card which can be used prior to the 3rd guber to ramp, but it's finicky, requiring an MP3 in order to actually convert the mana it gives you into an advantage. This still is an improvement over most MP3s by themselves, which will just spin your wheels at the 2-guber stage.</p>
@@ -133,9 +202,19 @@
             <img src="images/echo.jpg" alt="Echo">
             
             <div class="kill-infobox">
-                <div><strong>Mana:</strong> 7</div>
-                <div><strong>Requirements:</strong> Guber, 2x Echo, Tutor</div>
-                <div><strong>Sequence:</strong> Guber → Echo → Echo → Tutor</div>
+                <div class="infobox-top">
+                    <div class="infobox-mana">
+                        <div class="infobox-mana-label">Mana</div>
+                        <div>7</div>
+                    </div>
+                    <div class="infobox-requirements">
+                        <strong>Requirements:</strong>
+                        Guber, 2x Echo, Tutor
+                    </div>
+                </div>
+                <div class="infobox-sequence">
+                    <strong>Sequence:</strong> Guber → Echo → Echo → Tutor
+                </div>
             </div>
 
             <p>This is really boring but I need to point it out because every one of these methods matters. Technically this could be any 3-mana cloner, but I'm not sure if the deck can afford more than 4 cloners when copies 5+ cannot get to 3 gubs on their own. A second Gub in hand also accomplishes this.</p>
@@ -147,18 +226,24 @@
             <img src="images/ripple.jpg" alt="Ripple Effect">
             
             <div class="kill-infobox">
-                <div><strong>Mana:</strong> 7</div>
-                <div><strong>Requirements:</strong> Guber, Echo, Ripple, Tutor</div>
-                <div><strong>Sequence:</strong> Guber → Echo → Ripple → FB-Echo → Tutor</div>
+                <div class="infobox-top">
+                    <div class="infobox-mana">
+                        <div class="infobox-mana-label">Mana</div>
+                        <div>7</div>
+                    </div>
+                    <div class="infobox-requirements">
+                        <strong>Requirements:</strong>
+                        Guber, Echo, Ripple, Tutor
+                    </div>
+                </div>
+                <div class="infobox-sequence">
+                    <strong>Sequence:</strong> Guber → Echo → Ripple → FB-Echo → Tutor
+                </div>
             </div>
 
             <p>Three-mana double blink makes Ripple Effect a doubly-effective MP3, which allows it to be useful a stage earlier than the rest of them.</p>
         </div>
     </div>
-
-    <footer>
-        <p><a href="index.html">Back to Home</a></p>
-    </footer>
 
     <script src="script.js"></script>
 </body>
