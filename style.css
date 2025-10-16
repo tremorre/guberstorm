@@ -78,6 +78,13 @@ nav a:hover {
     display: block;
 }
 
+.content img {
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 20px auto; /* Centers it with some spacing */
+}
+
 .image-tooltip img {
     max-width: 300px; /* Adjust this to change tooltip size */
     max-height: 300px;
