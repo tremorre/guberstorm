@@ -5,10 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>How to kill in a turn with Guberstorm</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Compact infobox styling */
+        .kill-infobox {
+            background-color: #ecf0f1;
+            border: 2px solid #3498db;
+            border-radius: 6px;
+            padding: 15px 20px;
+            margin: 20px 0;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        .kill-infobox div {
+            margin: 5px 0;
+        }
+
+        .kill-infobox strong {
+            color: #2c3e50;
+            min-width: 120px;
+            display: inline-block;
+        }
+
+        /* Inline images container */
+        .inline-images {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+
+        .inline-images img {
+            max-width: 200px;
+            max-height: 200px;
+            width: auto;
+            height: auto;
+        }
+
+        /* Single embedded images */
+        .content > h2 + img,
+        .content h2 + img {
+            max-width: 250px;
+            max-height: 250px;
+            display: block;
+            margin: 15px auto;
+        }
+
+        /* Section spacing */
+        .kill-section {
+            margin: 40px 0;
+        }
+    </style>
 </head>
 <body>
     <nav>
         <a href="index.html">Home</a>
+        <!-- Add your other navigation links here -->
     </nav>
 
     <div class="content">
@@ -16,65 +68,92 @@
         
         <p>This page is dedicated to listing out what board states the deck has lethal in. I hope to have these memorized myself eventually, but for now it is also useful for me as a cheat sheet for that.</p>
 
-        <h2>Basic Kill</h2>
-        <p><strong>8 mana</strong><br>
-        Guber, Echo, Tutor<br>
-        Guber, Echo, FB-Echo, <span class="image-trigger" data-image="images/swords.jpg">Swords</span>/<span class="image-trigger" data-image="images/shift.jpg">Shift</span></p>
+        <div class="kill-section">
+            <h2>Basic Kill</h2>
+            
+            <div class="kill-infobox">
+                <div><strong>Mana:</strong> 8</div>
+                <div><strong>Requirements:</strong> Guber, Echo, Tutor</div>
+                <div><strong>Sequence:</strong> Guber → Echo → FB-Echo → <span class="image-trigger" data-image="images/swords.jpg">Swords</span>/<span class="image-trigger" data-image="images/shift.jpg">Shift</span></div>
+            </div>
 
-        <img src="images/guber.jpg" alt="Guber">
-        <img src="images/echo.jpg" alt="Echo">
-        <img src="images/shift.jpg" alt="Shift">
-        <img src="images/seer.jpg" alt="Seer">
+            <div class="inline-images">
+                <img src="images/gub.jpg" alt="Guber">
+                <img src="images/echo.jpg" alt="Echo">
+                <img src="images/shift.jpg" alt="Shift">
+                <img src="images/seer.jpg" alt="Seer">
+            </div>
 
-        <p>This is the fewest-cards-in-hand way to win in one turn. Ideally you have built up at least a pledge and ideally a treasure or two when trying to win like this, because getting to 8 lands is slow.</p>
+            <p>This is the fewest-cards-in-hand way to win in one turn. Ideally you have built up at least a pledge and ideally a treasure or two when trying to win like this, because getting to 8 lands is slow.</p>
 
-        <p>1 mana here is reserved for the final stage. If you have aspie in hand, then 2 mana is needed for it. However, for this final stage a lot of cards can help you get to the win - any mana-positive 3-drop (henceforth MP3).</p>
+            <p>1 mana here is reserved for the final stage. If you have aspie in hand, then 2 mana is needed for it. However, for this final stage a lot of cards can help you get to the win - any mana-positive 3-drop (henceforth MP3).</p>
 
-        <p>MP3s include the following most notably: Reflected Echo (a second one), <span class="image-trigger" data-image="images/bargain.jpg">Wretched Bargain</span>, <span class="image-trigger" data-image="images/effluvium.jpg">Festered Effluvium</span>*, <span class="image-trigger" data-image="images/shift.jpg">Axiomatic Shift</span>*, <span class="image-trigger" data-image="images/ripple.jpg">Ripple Effect</span>, <span class="image-trigger" data-image="images/garren.jpg">Garren</span>, and <span class="image-trigger" data-image="images/gyw.jpg">Get Your Wish</span>*. However, there are a lot of cards that fit the bill (especially in green), including: <span class="image-trigger" data-image="images/development.jpg">International Development</span>, <span class="image-trigger" data-image="images/sustainable.jpg">Sustainable Investments</span>, <span class="image-trigger" data-image="images/bindlife.jpg">Bind Life to Steel</span>*, <span class="image-trigger" data-image="images/temperamental.jpg">Temperamental Growth</span>, <span class="image-trigger" data-image="images/wsv.jpg">Work-Safety Violation</span>, and <span class="image-trigger" data-image="images/sola.jpg">Sola Contraband Playboy</span>.</p>
+            <p>MP3s include the following most notably: Reflected Echo (a second one), <span class="image-trigger" data-image="images/bargain.jpg">Wretched Bargain</span>, <span class="image-trigger" data-image="images/effluvium.jpg">Festered Effluvium</span>*, Axiomatic Shift*, <span class="image-trigger" data-image="images/ripple.jpg">Ripple Effect</span>, <span class="image-trigger" data-image="images/garren.jpg">Garren</span>, and <span class="image-trigger" data-image="images/gyw.jpg">Get Your Wish</span>*. However, there are a lot of cards that fit the bill (especially in green), including: <span class="image-trigger" data-image="images/development.jpg">International Development</span>, <span class="image-trigger" data-image="images/sustainable.jpg">Sustainable Investments</span>, <span class="image-trigger" data-image="images/bindlife.jpg">Bind Life to Steel</span>*, <span class="image-trigger" data-image="images/temperamental.jpg">Temperamental Growth</span>, <span class="image-trigger" data-image="images/wsv.jpg">Work-Safety Violation</span>, and <span class="image-trigger" data-image="images/sola.jpg">Sola Contraband Playboy</span>.</p>
 
-        <p>If we have to tutor out the Guber with <span class="image-trigger" data-image="images/swords.jpg">Swords</span>/<span class="image-trigger" data-image="images/shift.jpg">Shift</span>, then this costs 2 more. If we can flash in the guber with <span class="image-trigger" data-image="images/ikurimoko.jpg">Ikurimoko</span>/<span class="image-trigger" data-image="images/ozan.jpg">Ozan</span>/<span class="image-trigger" data-image="images/gyw.jpg">Get Your Wish</span>, or if we can play it and have it survive a turn, then it costs 2 less.</p>
+            <p>If we have to tutor out the Guber with <span class="image-trigger" data-image="images/swords.jpg">Swords</span>/Shift, then this costs 2 more. If we can flash in the guber with <span class="image-trigger" data-image="images/ikurimoko.jpg">Ikurimoko</span>/<span class="image-trigger" data-image="images/ozan.jpg">Ozan</span>/<span class="image-trigger" data-image="images/gyw.jpg">Get Your Wish</span>, or if we can play it and have it survive a turn, then it costs 2 less.</p>
 
-        <p>In most cases we will win once we get infinite surveils, but one copy of <span class="image-trigger" data-image="images/discen.jpg">discern</span> means we can mill ourself until discern is in gy, then surveil until we hit a MP3, draw it, then echo for gub4.</p>
+            <p>In most cases we will win once we get infinite surveils, but one copy of <span class="image-trigger" data-image="images/discen.jpg">discern</span> means we can mill ourself until discern is in gy, then surveil until we hit a MP3, draw it, then echo for gub4.</p>
 
-        <p>Let's set aside then all the cards which contribute a single treasure-equivalent when played prior to the main turn, or which contribute only as MP3s giving you the mana to play <span class="image-trigger" data-image="images/shift.jpg">shift</span>/<span class="image-trigger" data-image="images/swords.jpg">swords</span> for aspie.</p>
+            <p>Let's set aside then all the cards which contribute a single treasure-equivalent when played prior to the main turn, or which contribute only as MP3s giving you the mana to play Shift/Swords for aspie.</p>
 
-        <p>All of the following kills can be improved by 1 mana with an unrelated MP3 in hand.</p>
+            <p>All of the following kills can be improved by 1 mana with an unrelated MP3 in hand.</p>
+        </div>
 
-        <h2>Kill with Prior Pouncer</h2>
-        <img src="images/pouncer.jpg" alt="Pouncer">
+        <div class="kill-section">
+            <h2>Kill with Prior Pouncer</h2>
+            
+            <img src="images/pouncer.jpg" alt="Pouncer">
+            
+            <div class="kill-infobox">
+                <div><strong>Mana:</strong> 6</div>
+                <div><strong>Requirements:</strong> Guber, Pouncer in Play, Echo, Tutor</div>
+                <div><strong>Sequence:</strong> Guber → Pounce → Echo → FB-Echo → Tutor</div>
+            </div>
 
-        <p><strong>6 mana</strong><br>
-        Guber, <span class="image-trigger" data-image="images/pouncer.jpg">Pouncer</span> in Play, Echo, Tutor<br>
-        Guber → Pounce → Echo → FB-Echo → Tutor</p>
+            <p>Pouncer is uniquely among our early money-saving-spells able to decrease our necessary threshhold by 2. Instead of casting its ability before everything, we can cast it after a guber is out, thus going +2 net with it.</p>
+        </div>
 
-        <p><span class="image-trigger" data-image="images/pouncer.jpg">Pouncer</span> is uniquely among our early money-saving-spells able to decrease our necessary threshhold by 2. Instead of casting its ability before everything, we can cast it after a guber is out, thus going +2 net with it.</p>
+        <div class="kill-section">
+            <h2>Kill with Wretched Bargain</h2>
+            
+            <img src="images/bargain.jpg" alt="Wretched Bargain">
+            
+            <div class="kill-infobox">
+                <div><strong>Mana:</strong> 7</div>
+                <div><strong>Requirements:</strong> Guber, Echo, Bargain, MP3, Tutor</div>
+                <div><strong>Sequence:</strong> Guber → Echo → Bargain → MP3 → Echo → Tutor</div>
+            </div>
 
-        <h2>Kill with Wretched Bargain</h2>
-        <img src="images/bargain.jpg" alt="Wretched Bargain">
+            <p>Bargain is another card which can be used prior to the 3rd guber to ramp, but it's finicky, requiring an MP3 in order to actually convert the mana it gives you into an advantage. This still is an improvement over most MP3s by themselves, which will just spin your wheels at the 2-guber stage.</p>
+        </div>
 
-        <p><strong>7 mana</strong><br>
-        Guber, Echo, <span class="image-trigger" data-image="images/bargain.jpg">Bargain</span>, MP3, Tutor<br>
-        Guber → Echo → Bargain → MP3 → Echo → Tutor</p>
+        <div class="kill-section">
+            <h2>Kill with Second Echo</h2>
+            
+            <img src="images/echo.jpg" alt="Echo">
+            
+            <div class="kill-infobox">
+                <div><strong>Mana:</strong> 7</div>
+                <div><strong>Requirements:</strong> Guber, 2x Echo, Tutor</div>
+                <div><strong>Sequence:</strong> Guber → Echo → Echo → Tutor</div>
+            </div>
 
-        <p><span class="image-trigger" data-image="images/bargain.jpg">Bargain</span> is another card which can be used prior to the 3rd guber to ramp, but it's finicky, requiring an MP3 in order to actually convert the mana it gives you into an advantage. This still is an improvement over most MP3s by themselves, which will just spin your wheels at the 2-guber stage.</p>
+            <p>This is really boring but I need to point it out because every one of these methods matters. Technically this could be any 3-mana cloner, but I'm not sure if the deck can afford more than 4 cloners when copies 5+ cannot get to 3 gubs on their own. A second Gub in hand also accomplishes this.</p>
+        </div>
 
-        <h2>Kill with Second Echo</h2>
-        <img src="images/echo.jpg" alt="Echo">
+        <div class="kill-section">
+            <h2>Kill with Ripple Effect</h2>
+            
+            <img src="images/ripple.jpg" alt="Ripple Effect">
+            
+            <div class="kill-infobox">
+                <div><strong>Mana:</strong> 7</div>
+                <div><strong>Requirements:</strong> Guber, Echo, Ripple, Tutor</div>
+                <div><strong>Sequence:</strong> Guber → Echo → Ripple → FB-Echo → Tutor</div>
+            </div>
 
-        <p><strong>7 mana</strong><br>
-        Guber, 2x Echo, Tutor<br>
-        Guber → Echo → Echo → Tutor</p>
-
-        <p>This is really boring but I need to point it out because every one of these methods matters. Technically this could be any 3-mana cloner, but I'm not sure if the deck can afford more than 4 cloners when copies 5+ cannot get to 3 gubs on their own. A second Gub in hand also accomplishes this.</p>
-
-        <h2>Kill with Ripple Effect</h2>
-        <img src="images/ripple.jpg" alt="Ripple Effect">
-
-        <p><strong>7 mana</strong><br>
-        Guber, Echo, <span class="image-trigger" data-image="images/ripple.jpg">Ripple</span>, Tutor<br>
-        Guber → Echo → Ripple → FB-Echo → Tutor</p>
-
-        <p>Three-mana double blink makes <span class="image-trigger" data-image="images/ripple.jpg">Ripple Effect</span> a doubly-effective MP3, which allows it to be useful a stage earlier than the rest of them.</p>
+            <p>Three-mana double blink makes Ripple Effect a doubly-effective MP3, which allows it to be useful a stage earlier than the rest of them.</p>
+        </div>
     </div>
 
     <footer>
