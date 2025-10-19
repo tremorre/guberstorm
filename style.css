@@ -152,3 +152,7 @@ footer {
     display: block;
     margin: 15px auto;
 }
+
+.card-section {
+    margin: 40px 0;
+}
