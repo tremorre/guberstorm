@@ -127,3 +127,28 @@ footer {
     color: #777;
     font-size: 14px;
 }
+
+/* Inline images container */
+.inline-images {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.inline-images img {
+    max-width: 220px;
+    max-height: 220px;
+    width: auto;
+    height: auto;
+}
+
+/* Single embedded images */
+.content > h2 + img,
+.content h2 + img,
+.card-section > img {
+    max-width: 300px;
+    max-height: 300px;
+    display: block;
+    margin: 15px auto;
+}
