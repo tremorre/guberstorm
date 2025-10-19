@@ -64,36 +64,6 @@
             font-family: 'Georgia', serif;
             margin-right: 8px;
         }
-
-        /* Inline images container */
-        .inline-images {
-            display: flex;
-            gap: 10px;
-            flex-wrap: wrap;
-            margin: 20px 0;
-        }
-
-        .inline-images img {
-            max-width: 220px;
-            max-height: 220px;
-            width: auto;
-            height: auto;
-        }
-
-        /* Single embedded images */
-        .content > h2 + img,
-        .content h2 + img,
-        .kill-section > img {
-            max-width: 300px;
-            max-height: 300px;
-            display: block;
-            margin: 15px auto;
-        }
-
-        /* Section spacing */
-        .kill-section {
-            margin: 40px 0;
-        }
     </style>
 </head>
 <body>
@@ -107,7 +77,7 @@
         
         <p>This page is dedicated to listing out what board states the deck has lethal in. I hope to have these memorized myself eventually, but for now it is also useful for me as a cheat sheet for that.</p>
 
-        <div class="kill-section">
+        <div class="card-section">
             <h2>Basic Kill</h2>
             
             <div class="kill-infobox">
@@ -148,7 +118,7 @@
             <p>All of the following kills can be improved by 1 mana with an unrelated MP3 in hand.</p>
         </div>
 
-        <div class="kill-section">
+        <div class="card-section">
             <h2>Kill with Prior Pouncer</h2>
             
             <img src="images/pouncer.jpg" alt="Pouncer">
@@ -172,7 +142,7 @@
             <p>Pouncer is uniquely among our early money-saving-spells able to decrease our necessary threshhold by 2. Instead of casting its ability before everything, we can cast it after a guber is out, thus going +2 net with it.</p>
         </div>
 
-        <div class="kill-section">
+        <div class="card-section">
             <h2>Kill with Wretched Bargain</h2>
             
             <img src="images/bargain.jpg" alt="Wretched Bargain">
@@ -196,7 +166,7 @@
             <p>Bargain is another card which can be used prior to the 3rd guber to ramp, but it's finicky, requiring an MP3 in order to actually convert the mana it gives you into an advantage. This still is an improvement over most MP3s by themselves, which will just spin your wheels at the 2-guber stage.</p>
         </div>
 
-        <div class="kill-section">
+        <div class="card-section">
             <h2>Kill with Second Echo</h2>
             
             <img src="images/echo.jpg" alt="Echo">
@@ -220,7 +190,7 @@
             <p>This is really boring but I need to point it out because every one of these methods matters. Technically this could be any 3-mana cloner, but I'm not sure if the deck can afford more than 4 cloners when copies 5+ cannot get to 3 gubs on their own. A second Gub in hand also accomplishes this.</p>
         </div>
 
-        <div class="kill-section">
+        <div class="card-section">
             <h2>Kill with Ripple Effect</h2>
             
             <img src="images/ripple.jpg" alt="Ripple Effect">
